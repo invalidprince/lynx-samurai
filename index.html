@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lynx Samurai — Collectible Swords &amp; Armor</title>
+<meta name="description" content="Lynx Samurai sells unique collectible swords, katanas, and armor at shows and markets across central Pennsylvania. Come find the booth.">
+<meta name="theme-color" content="#0b0b0f">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="hero">
+  <div class="hero-bg" aria-hidden="true"><span class="sun"></span><span class="slash s1"></span><span class="slash s2"></span></div>
+  <div class="hero-inner">
+    <img class="logo" src="assets/logo.png" alt="Lynx Samurai logo — crossed katanas behind a samurai kabuto helmet on a red rising sun" width="1200" height="1200" fetchpriority="high">
+    <p class="tagline">Collectible Swords <span aria-hidden="true">•</span> Armor <span aria-hidden="true">•</span> Display Pieces</p>
+    <p class="blurb">Hand-picked katanas, fantasy and anime blades, and samurai armor you won't find at the mall. See them in person at shows across central PA, or message me to reserve a piece.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#events">Where to find me</a>
+      <a class="btn btn-ghost" href="#contact">Reserve a piece</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section id="shop" class="section" aria-labelledby="shop-h">
+    <h2 id="shop-h"><span class="kanji" aria-hidden="true">刀</span> What I sell</h2>
+    <p class="section-sub">Stock rotates every show. This is what's usually on the table.</p>
+    <div class="products">
+      <article class="product">
+        <span class="product-icon" aria-hidden="true">⚔️</span>
+        <h3>Katanas &amp; Traditional Blades</h3>
+        <p>Full-tang katana, wakizashi and tanto sets. Carbon-steel and display-grade, with saya, stands and cleaning kits.</p>
+      </article>
+      <article class="product">
+        <span class="product-icon" aria-hidden="true">🔥</span>
+        <h3>Anime &amp; Fantasy Swords</h3>
+        <p>Replica blades from your favorite series and games. Limited runs, numbered pieces, and the ones everyone asks about.</p>
+      </article>
+      <article class="product">
+        <span class="product-icon" aria-hidden="true">🛡️</span>
+        <h3>Samurai Armor &amp; Helmets</h3>
+        <p>Kabuto helmets, menpo masks and full display armor sets. Wall-ready or stand-mounted.</p>
+      </article>
+      <article class="product">
+        <span class="product-icon" aria-hidden="true">🗡️</span>
+        <h3>Knives &amp; Collectibles</h3>
+        <p>Collector knives, letter openers, mini blades and display stands. Great gifts for the collector who has everything.</p>
+      </article>
+      <article class="product product-wide">
+        <span class="product-icon" aria-hidden="true">✨</span>
+        <h3>Looking for something specific?</h3>
+        <p>I can source rare and custom pieces. <a href="#contact">Send me what you're after</a> and I'll track it down.</p>
+      </article>
+    </div>
+    <p class="notice"><strong>18+ to purchase.</strong> ID required for all blades. Sold as collectibles and display pieces; know your local laws before you carry.</p>
+  </section>
+
+  <section id="events" class="section section-alt" aria-labelledby="events-h">
+    <h2 id="events-h"><span class="kanji" aria-hidden="true">道</span> Where to find me</h2>
+    <p class="section-sub">Come see the blades in person at these upcoming shows.</p>
+    <div id="events-list" class="events" aria-live="polite" aria-busy="true">
+      <p class="loading">Loading events…</p>
+    </div>
+  </section>
+
+  <section id="booth" class="section" aria-labelledby="booth-h">
+    <h2 id="booth-h"><span class="kanji" aria-hidden="true">侍</span> The booth</h2>
+    <p class="section-sub">Here's what the table looks like. Tap a photo to see it bigger.</p>
+    <div class="gallery">
+      <div class="gallery-item placeholder"><span>Booth photo</span></div>
+      <div class="gallery-item placeholder"><span>Katana wall</span></div>
+      <div class="gallery-item placeholder"><span>Armor display</span></div>
+      <div class="gallery-item placeholder"><span>Anime blades</span></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-alt" aria-labelledby="contact-h">
+    <h2 id="contact-h"><span class="kanji" aria-hidden="true">文</span> Reserve a piece or ask what's in stock</h2>
+    <p class="section-sub">Want to hold a blade for pickup at the next show, or ask if I have something? Send me a note and I'll get back to you.</p>
+    <form id="contact-form" class="card form" novalidate>
+      <div class="field"><label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" required maxlength="100" placeholder="Jane Smith"></div>
+      <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required maxlength="200" placeholder="you@example.com"></div>
+      <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required maxlength="2000" placeholder="I'd like to reserve the … / Do you have …"></textarea></div>
+      <button class="btn btn-primary" type="submit">Send</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+    <p class="social">Follow along on <a href="https://www.facebook.com/share/19y35zrD15/">Facebook</a> for new arrivals and show announcements.</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year">2026</span> Lynx Samurai · Central Pennsylvania</p>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>
