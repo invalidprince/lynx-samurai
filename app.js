@@ -1,6 +1,6 @@
 /* Lynx Samurai — events rendering + contact form (same pattern as Sawyer's Squishys) */
 (function(){"use strict";
-var ACCESS_KEY="REPLACE_WITH_WEB3FORMS_KEY",ENDPOINT="https://api.web3forms.com/submit",SUBJECT="Lynx Samurai website message";
+var ACCESS_KEY="b70cb6d8-228b-4c05-a489-9c1acc1eabd0",ENDPOINT="https://api.web3forms.com/submit",SUBJECT="Lynx Samurai website message";
 var listEl=document.getElementById("events-list");
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
 function parseDate(v){if(!v)return null;var m=/^(\d{4})-(\d{2})-(\d{2})/.exec(String(v).trim());return m?new Date(+m[1],+m[2]-1,+m[3]):null}
