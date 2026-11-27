@@ -70,10 +70,25 @@ h2{font-size:clamp(1.6rem,3.6vw,2.2rem);display:flex;align-items:center;gap:.6re
 .loading,.empty{color:var(--muted)}
 
 /* GALLERY */
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.9rem}
-.gallery-item{display:block;aspect-ratio:3/4;overflow:hidden;border-radius:var(--radius);border:1px solid #2e2e3b;background:var(--ink-3)}
-.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}
+.gallery{display:grid;gap:.8rem;grid-template-columns:repeat(2,1fr)}
+@media (min-width:600px){.gallery{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:900px){.gallery{grid-template-columns:repeat(4,1fr)}}
+.gallery-item{display:block;overflow:hidden;border-radius:var(--radius);border:1px solid #2e2e3b;background:var(--ink-3);box-shadow:var(--shadow);cursor:zoom-in}
+.gallery-item img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;transition:transform .25s}
+.gallery .gallery-wide{grid-column:span 2}
+.gallery .gallery-wide img{aspect-ratio:3/2}
 .gallery-item:hover img{transform:scale(1.04)}
+.lightbox{border:none;padding:0;background:transparent;max-width:100vw;max-height:100vh;width:100vw;height:100vh;margin:0}
+.lightbox[open]{display:flex;align-items:center;justify-content:center}
+.lightbox::backdrop{background:rgba(11,11,15,.92)}
+.lb-figure{margin:0;max-width:92vw;text-align:center}
+.lb-figure img{max-width:92vw;max-height:82vh;width:auto;height:auto;margin:0 auto;border-radius:var(--radius);border:1px solid #2e2e3b}
+.lb-figure figcaption{color:var(--paper);font-weight:600;margin-top:.7rem;font-size:.95rem;padding:0 2.6rem}
+.lb-btn{position:fixed;z-index:2;border:none;cursor:pointer;font-weight:800;width:48px;height:48px;border-radius:50%;background:var(--red);color:#fff;font-size:1.6rem;line-height:1;box-shadow:0 4px 14px rgba(0,0,0,.5)}
+.lb-btn:hover{background:var(--red-deep)}
+.lb-close{top:12px;right:12px;font-size:1.2rem}
+.lb-prev{left:10px;top:50%;transform:translateY(-50%)}
+.lb-next{right:10px;top:50%;transform:translateY(-50%)}
 .placeholder{aspect-ratio:3/4;display:grid;place-items:center;border:2px dashed #3a3a48;border-radius:var(--radius);color:var(--muted);background:repeating-linear-gradient(135deg,var(--ink-2) 0 12px,var(--ink-3) 12px 24px);font-weight:600}
 
 /* FORM */
