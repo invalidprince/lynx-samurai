@@ -101,3 +101,9 @@ input:focus,textarea:focus{border-color:var(--gold)}
 .social{margin-top:1.4rem;color:var(--muted)}
 .footer{text-align:center;padding:2rem 1rem;color:var(--muted);font-size:.9rem;border-top:3px solid var(--red)}
 @media (max-width:520px){.event{grid-template-columns:1fr}.event-date{justify-self:start}}
+
+.storefront{margin-bottom:1.2rem;border-top:3px solid var(--gold)}
+.storefront h3{color:var(--gold);font-size:1.2rem;margin-bottom:.4rem}
+.store-addr{font-size:1.05rem;margin-bottom:.3rem}
+.store-hours{color:var(--steel)}
+.store-hours strong{color:var(--gold)}
